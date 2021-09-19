@@ -14,6 +14,7 @@
 		FA4004C226F605340020E55C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4004C026F605330020E55C /* Main.storyboard */; };
 		FA4004C326F605340020E55C /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4004C126F605340020E55C /* SliderViewController.swift */; };
 		FA4004C626F60F650020E55C /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4004C526F60F650020E55C /* CustomButton.swift */; };
+		FAC103DC26F7565C00E36CAB /* SliderValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC103DB26F7565C00E36CAB /* SliderValue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FA4004C026F605330020E55C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FA4004C126F605340020E55C /* SliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
 		FA4004C526F60F650020E55C /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		FAC103DB26F7565C00E36CAB /* SliderValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderValue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				FA4004C426F605F20020E55C /* UIKit */,
 				FA4004B126F604A80020E55C /* SliderGameSwiftUIApp.swift */,
 				FA4004B326F604A80020E55C /* ContentView.swift */,
+				FAC103DB26F7565C00E36CAB /* SliderValue.swift */,
 				FA4004C526F60F650020E55C /* CustomButton.swift */,
 				FA4004B526F604AF0020E55C /* Assets.xcassets */,
 				FA4004BA26F604AF0020E55C /* Info.plist */,
@@ -160,6 +163,7 @@
 				FA4004B426F604A80020E55C /* ContentView.swift in Sources */,
 				FA4004B226F604A80020E55C /* SliderGameSwiftUIApp.swift in Sources */,
 				FA4004C626F60F650020E55C /* CustomButton.swift in Sources */,
+				FAC103DC26F7565C00E36CAB /* SliderValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

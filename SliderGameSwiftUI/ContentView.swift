@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var targetValue = Int.random(in: 1...100)
-    @State private var currentValue = 0
+    @State private var currentValue: Double = 50
     @State private var showAlert: Bool = false
     
     var body: some View {
@@ -20,8 +20,10 @@ struct ContentView: View {
             HStack {
                 Text("0")
                     .padding()
-                SliderViewControllerRepresentable().frame(
-                    height: 100)
+                SliderValue(currentValue: $currentValue)
+                    // SliderViewControllerRepresentable()
+                    .frame(
+                        height: 100)
                 Text("100")
                     .padding()
             }
@@ -31,23 +33,25 @@ struct ContentView: View {
                     showAlert.toggle()
                 }
                 .alert(isPresented: $showAlert) {
-                  Alert(title: Text("Your Score"))
+                    Alert(title: Text("Your Score"),
+                          message: Text("\(computeScore())"))
                 }
                 .padding()
-                }
-                CustomButton(title: "Начать заново") {
-                    getNewGame()
-                }
+            }
+            
+            CustomButton(title: "Начать заново") {
+                getNewGame()
             }
         }
+    }
     
     private func computeScore() -> Int {
-        let difference = abs(targetValue - lround(Double(currentValue)))
+        let difference = abs(targetValue - lround(currentValue))
         return 100 - difference
     }
     
     private func getNewGame() {
-       targetValue = Int.random(in: 1...100)
+        targetValue = Int.random(in: 1...100)
     }
 }
 
